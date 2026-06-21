@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+ <listeners> 
+<listener class-name="testbase.TestListener"> </listener> 
+</listeners>
+   
+    
+    
+ 
+  <test name="Test_Login">
+  <parameter name="browsername" value="chrome"/>
+      <parameter name="URL" value="http://demowebshop.tricentis.com/"/>
+      <parameter name="browserType" value="local"/>
+      <parameter name="ip" value="http://172.30.48.1:4444/wd/hub"/>
+    <classes>
+      <class name="tests.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   
+    
+  
+</suite> <!-- Suite -->

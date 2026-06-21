@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="testbase.TestListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test_Login(failed)" verbose="0">
+    <parameter name="ip" value="http://172.30.48.1:4444/wd/hub"/>
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="URL" value="http://demowebshop.tricentis.com/"/>
+    <parameter name="browserType" value="local"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="validDataLoginTest" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="intialization"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Test_Login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
