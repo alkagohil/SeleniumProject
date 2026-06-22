@@ -31,7 +31,7 @@ public void intialization(String browser,String browserType,String url,@Optional
 	//sizing of window
 	//cookie management
 	//capability setting
-		WebDriver driver = BrowserFactory.createWebDriver(browser,browserType,ip);
+		WebDriver driver = BrowserFactory.createWebDriver(browser,browserType,url);
 		drivers.set(driver);
 	  driver.get(url);
 	  
